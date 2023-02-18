@@ -13,6 +13,10 @@
 		269BD70A299D139800E65C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269BD708299D139800E65C57 /* Main.storyboard */; };
 		269BD70C299D139E00E65C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269BD70B299D139E00E65C57 /* Assets.xcassets */; };
 		269BD70F299D139E00E65C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269BD70D299D139E00E65C57 /* LaunchScreen.storyboard */; };
+		269BD73A29A1315B00E65C57 /* Entreprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BD73929A1315B00E65C57 /* Entreprise.swift */; };
+		269BD73C29A1317100E65C57 /* Depense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BD73B29A1317100E65C57 /* Depense.swift */; };
+		269BD73E29A1317F00E65C57 /* Convention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BD73D29A1317F00E65C57 /* Convention.swift */; };
+		269BD74029A1318C00E65C57 /* Compte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BD73F29A1318C00E65C57 /* Compte.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		269BD70B299D139E00E65C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269BD70E299D139E00E65C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269BD710299D139E00E65C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269BD73929A1315B00E65C57 /* Entreprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entreprise.swift; sourceTree = "<group>"; };
+		269BD73B29A1317100E65C57 /* Depense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depense.swift; sourceTree = "<group>"; };
+		269BD73D29A1317F00E65C57 /* Convention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convention.swift; sourceTree = "<group>"; };
+		269BD73F29A1318C00E65C57 /* Compte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compte.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		269BD701299D139800E65C57 /* Projet-ios */ = {
 			isa = PBXGroup;
 			children = (
+				269BD73629A1312300E65C57 /* BLL */,
 				269BD702299D139800E65C57 /* AppDelegate.swift */,
 				269BD704299D139800E65C57 /* SceneDelegate.swift */,
 				269BD706299D139800E65C57 /* ViewController.swift */,
@@ -65,6 +74,33 @@
 				269BD710299D139E00E65C57 /* Info.plist */,
 			);
 			path = "Projet-ios";
+			sourceTree = "<group>";
+		};
+		269BD73629A1312300E65C57 /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+				269BD73829A1313F00E65C57 /* Controller */,
+				269BD73729A1313800E65C57 /* Model */,
+			);
+			path = BLL;
+			sourceTree = "<group>";
+		};
+		269BD73729A1313800E65C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				269BD73929A1315B00E65C57 /* Entreprise.swift */,
+				269BD73B29A1317100E65C57 /* Depense.swift */,
+				269BD73D29A1317F00E65C57 /* Convention.swift */,
+				269BD73F29A1318C00E65C57 /* Compte.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		269BD73829A1313F00E65C57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269BD73A29A1315B00E65C57 /* Entreprise.swift in Sources */,
 				269BD707299D139800E65C57 /* ViewController.swift in Sources */,
+				269BD73C29A1317100E65C57 /* Depense.swift in Sources */,
 				269BD703299D139800E65C57 /* AppDelegate.swift in Sources */,
+				269BD74029A1318C00E65C57 /* Compte.swift in Sources */,
+				269BD73E29A1317F00E65C57 /* Convention.swift in Sources */,
 				269BD705299D139800E65C57 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
