@@ -10,3 +10,17 @@ import Foundation
 //Banque
 //Montant
 //Debiter(Depense/Convention)
+
+class Compte{
+    internal init(numero_compte: Int, banque: String, montant: Double) {
+        self.numero_compte = numero_compte
+        self.banque = banque
+        self.montant = montant
+    }
+    
+    var numero_compte : Int
+    var banque : String
+    var montant : Double
+    
+    
+}
